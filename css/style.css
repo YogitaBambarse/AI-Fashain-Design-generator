@@ -5,19 +5,23 @@
 
 body {
   margin: 0;
-  background: #f8f9fb;
+  background: #f6f7fb;
   color: #333;
 }
 
 header {
-  background: #111;
+  background: #0f172a;
   color: white;
-  padding: 20px;
   text-align: center;
+  padding: 30px 20px;
+}
+
+header h1 {
+  margin-bottom: 5px;
 }
 
 .container {
-  max-width: 900px;
+  max-width: 1000px;
   margin: 30px auto;
   padding: 20px;
 }
@@ -25,21 +29,34 @@ header {
 .input-section {
   display: flex;
   gap: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
 }
 
 .input-section input {
   flex: 1;
-  padding: 12px;
+  padding: 14px;
   font-size: 16px;
 }
 
 .input-section button {
-  padding: 12px 20px;
+  padding: 14px 24px;
   background: #ff3f6c;
   color: white;
   border: none;
+  font-size: 16px;
   cursor: pointer;
+  border-radius: 4px;
+}
+
+.input-section button:hover {
+  background: #e7335f;
+}
+
+.how {
+  background: white;
+  padding: 15px;
+  border-left: 4px solid #ff3f6c;
+  margin-bottom: 30px;
 }
 
 .result-section {
@@ -52,16 +69,44 @@ header {
   background: white;
   padding: 20px;
   border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 .card img {
   width: 100%;
   border-radius: 8px;
+  margin-top: 10px;
+}
+
+.ai-note {
+  font-size: 14px;
+  margin-top: 10px;
+  color: #555;
+}
+
+ul {
+  padding-left: 18px;
+}
+
+li {
+  margin-bottom: 8px;
 }
 
 footer {
   text-align: center;
   padding: 15px;
-  background: #eee;
+  background: #eaeaea;
   margin-top: 40px;
+  font-size: 14px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .result-section {
+    grid-template-columns: 1fr;
+  }
+
+  .input-section {
+    flex-direction: column;
+  }
 }
