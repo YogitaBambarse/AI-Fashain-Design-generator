@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AI Fashion Design Generator</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header>
+  <h1>AI Fashion Design Generator</h1>
+  <p>Generate fashion designs using AI and explore affordable styles</p>
+</header>
+
+<main class="container">
+  <section class="input-section">
+    <input type="text" id="prompt" placeholder="Describe your fashion idea (e.g., Summer floral dress)">
+    <button onclick="generateDesign()">Generate</button>
+  </section>
+
+  <section class="result-section">
+    <div class="card">
+      <h3>Generated Design</h3>
+      <img id="designImage" src="assets/images/placeholder.png" alt="Design Preview">
+    </div>
+
+    <div class="card">
+      <h3>Affordable Suggestions</h3>
+      <ul id="productList"></ul>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2026 AI Fashion Design Generator</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
