@@ -16,7 +16,7 @@ A web-based application that generates fashion design concepts from text prompts
 - GitHub Pages
 
 ## Live Demo
-(Add your GitHub Pages link here)
+(https://yogitabambarse.github.io/AI-Fashain-Design-generator/)
 
 ## Future Enhancements
 - Integration with AI image generation APIs
